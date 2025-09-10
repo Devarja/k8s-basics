@@ -1,0 +1,34 @@
+K8'S - POD
+
+pod is smallest deployeble unit in kubernetes 
+pod is just wraper over the container and provides extra features like storage and network
+
+key points about pod
+i) pod is ephimeral in nature
+ii) pod can be consists of single container or multiple containers inside of it 
+iii) rarly pod can be created on objects like deployement,jobs which are controlled by a controllers
+iv) pods are managed
+v) 
+
+the creation pod can be done by this way
+
+apiVersion: v1
+kind: Pod
+
+
+ex - 1)side car container, 2)init container
+
+note - most of the time a single container inside a pod
+
+in mac we can install the kubectl using brew package manager.
+
+how actually minikube crerats cluster first it creats vm then it creats cluster on top of it
+
+some of the basics commands used to deal with pods
+i)kubectl get pods
+ii)kubectl apply -f pod.yaml
+iii) kubectl get pods -o wide - tp get all info abt the pod
+II)to debug a pod
+a) we use some of the basic commands
+i)kubectl logs pod nginx
+ii) kubectl describe pod nginx - complete pod information can be obtained using this command
