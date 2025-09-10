@@ -1,0 +1,23 @@
+KUBERNETES ARCHITECTURE
+kubernetes has a two major components inside a cluster
+1) master node 
+exp - It is a node responsible for managing the worker nodes inside a cluster
+
+it consists of 5 major components
+i) kube api - which is responsible for validating and configuring the yaml file data
+ii) etcd - it is a key value store database of cluster info
+iii) kube scheduler - It is a component which resopnisble for scheduling the newly created pods onto kubernetes worker node.
+iv) kube controller manager - controler manager that runs controller process . there are different types of controller manager each has its specific own function
+v) cloude controller manager - which is useful when we install k8's inside any of the cloude.
+
+2) Worker Node
+exp - It  is node which is responsible for running a appplication in the form pod inside a node
+
+it consists of 3 major components inside a cluster
+1) kubelet - it is agent inside of kubernetes cluster and which exits in all the node and which is responsible for managing the container specified inside podspec like
+checking the health of pod and whether it is running properly or not.
+2) kubeproxy - kubeproxy is a network proxy which is responsible for managing the 
+3) container runtime - it is a environment which is responsible for running conatiner
+
+
+kubectl - it is command line tool of k8s used to communicates the info between user and cluster .
