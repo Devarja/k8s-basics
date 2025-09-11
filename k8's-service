@@ -1,0 +1,11 @@
+Kubernetes services
+i) kubernetes load balancing
+ii) service discovery
+iii) expose to world
+
+note - service will allow us to acces the application outside the kubernetes cluster.
+
+we can create service of three types
+1) clusterIp - application can be accesed inside the cluster
+2) Nodeport - application can be accessed inside the organisation
+3) Loadbalancer - application can be accessed outside the world
