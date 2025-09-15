@@ -14,3 +14,18 @@ Note - service is a method to attach it to many pods to acces the application ou
 pods - also called as backends
 
 service not provides the network interface to access the application but also provides the policy to acces the pods.
+
+Loadbalancer type service info.
+
+1) Loadbalancer questions
+i)is load balcner type service on;y restricted to cloude seervice
+ans - ber metal lb implementation
+
+2) if lb can do things for why use ingress controller
+
+ingress controller will watch for ingress resources .
+
+points to remember 
+i) ingress resources will allocate ip address
+ii) some of the loadbalancer can sit inside the load balancer or outside the loadbalancer
+iii) 
