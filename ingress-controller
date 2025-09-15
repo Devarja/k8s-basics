@@ -1,0 +1,9 @@
+Kubernetes Ingress-controller
+
+exp - why the ingress controller comes into 
+
+optional - kubeproxy will assign an ip address to static ip adress to service component.
+
+ntk - if we allocate nodeport as service mode to pods then the port allocation range would by default port allocation range starts from 30000 - 32000
+
+1)load-balancer type service - 
