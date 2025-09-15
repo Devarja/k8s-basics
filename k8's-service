@@ -29,5 +29,17 @@ points to remember
 i) ingress resources will allocate ip address
 ii) some of the loadbalancer can sit inside the load balancer or outside the loadbalancer
 iii) An API object that manages external access to the services in a cluster, typically HTTP.
+iv) kubectl get ing - to list out the ingress resources
+v) using curl command we can acces the ip address or an hostname
+vi) tls layer - It is a transport layer security which authenticates a data communication between a web browser and a server.
+
+adding security to the ingress conttroller
+ssl passthrough - transfers the data from the client to the server without any data decryption
+
+ssl offloading is concept in ingress resource if we do enable it during application it will authenticates the data coming from the browser.
+and then transfers the 
+
+tls briding - it decrypts the data comming from the browser and decrypts at the loadbalncer leve then tranfser it to the server.
+
 
 
