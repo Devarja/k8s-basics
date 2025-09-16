@@ -1,9 +1,17 @@
-helm is a package manager for kubernetes
-
+helm is a package manager for kubernetes to which allow us to install kubernetes controllers or third party applications.
 mychart/
   Chart.yaml
   values.yaml
   charts/
   templates/
   ...
+
+
+artificate hub is public helm repository for installing the applications or the software from the repository.
+
+The main features of helm charts are.
+1) install the helm charts
+2) update the helm charts
+3) uninstall the helm charts
+4) create our own helm charts and update it.
 
