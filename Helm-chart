@@ -15,3 +15,9 @@ The main features of helm charts are.
 3) uninstall the helm charts
 4) create our own helm charts and update it.
 
+1)helm version check
+to check the helm version we use a command called
+helm version.
+
+chart is a bundle or a package of applications.
+
