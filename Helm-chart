@@ -21,3 +21,47 @@ helm version.
 
 chart is a bundle or a package of applications.
 
+kubectl config current-context - will list out the current context of the kubernetes.
+
+note - bitnami is the popular repository that u can use on day to day basis
+
+some prerequistie to install the helm on to local machine
+1)in macos we use brew
+ans - brew install helm - will install the helm onto local machine.
+
+2) add the repo to ur local machine using
+
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+3)install the required application from the repo
+
+helm install mynignx bitnami/nginx
+
+
+4) the command used to search applications inside bitnami repo
+helm search repo bitnami | grep nginx
+
+5) helm repo update eks - command used to update the repo.
+
+6)from the command called    1) helm create payments
+                              there will be three 4 files created inside of this repo
+            i) Charts.yaml ii)values.yaml iii) templates iv) charts -it can be ignored
+i) chart.yaml - contains metadata of chart like i)owner of the chart ii) version of the chart  iii) application version.
+
+ii)templates - it is a folder which contains all the yaml files related to an application 
+ex - deployment.yaml,config.yaml,service.yaml
+
+iii) values.yaml -file used to customize any file that is inside the templates folder by passing required values 
+
+
+the command used to package applications
+
+helm package shipment - after this there will be an zip file cretated
+
+after creating the helm package 
+end of the time we should use 
+
+helm repo index .
+
+
+
