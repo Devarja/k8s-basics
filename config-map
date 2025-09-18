@@ -1,0 +1,3 @@
+Config-Map
+  
+It is a file used to store the non sensitive info about the application and this can be cosumed by other pods in the cluster
