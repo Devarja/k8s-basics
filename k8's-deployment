@@ -1,10 +1,9 @@
-Deployment
-exp - deployment is a just wraper over the pods and provides some extra functionality
-like replicasets and scaling.
+Deployments
+ans - deployments manages set of pods to manage application workload,one that not maintain state.
 the replicaset is kubernetes controller.
 
 key points about deployment
-there are default controllers in kubernetes which are responsible for maintaining the desired state and actual state in kubernetes cluster.
+there are deployment controllers in kubernetes which are responsible for maintaining the desired state and actual state in kubernetes cluster.
 
 what is the command to list out all the resources and namespaces inside the cluster.
 
