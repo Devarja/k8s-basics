@@ -1,4 +1,5 @@
 Kubernetes services
+ans - service is component inside worker node  and which is responisble for exposing an application to end users.
 i) kubernetes load balancing
 ii) service discovery
 iii) expose to world
@@ -7,21 +8,21 @@ note - service will allow us to acces the application outside the kubernetes clu
 
 we can create service of three types
 1) clusterIp - application can be accesed inside the cluster
-2) Nodeport - application can be accessed inside the organisation
-3) Loadbalancer - application can be accessed outside the world
+2) Nodeport - application can be accessed a particular organisation users
+3) Loadbalancer - application can be accessed any of the public users
 
 Note - service is a method to attach it to many pods to acces the application outside the world.
 pods - also called as backends
 
-service not provides the network interface to access the application but also provides the policy to acces the pods.
+service not only provides the network interface to access the application but also provides the policy to acces the pods.
 
 Loadbalancer type service info.
 
 1) Loadbalancer questions
-i)is load balcner type service on;y restricted to cloude seervice
+ex - loadbalancer service type can be used only inside the cloud platforms
 ans - ber metal lb implementation
 
-2) if lb can do things for why use ingress controller
+2) from service if we can able to access the application why we use ingress resource.
 
 ingress controller will watch for ingress resources .
 
