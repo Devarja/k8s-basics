@@ -24,6 +24,8 @@ in mac we can install the kubectl using brew package manager.
 
 how actually minikube crerats cluster first it creats vm then it creats cluster on top of it
 
+what is minikube - minikube is a tool designed to run single node cluster on local machine.
+
 some of the basics commands used to deal with pods
 i)kubectl get pods
 ii)kubectl apply -f pod.yaml
