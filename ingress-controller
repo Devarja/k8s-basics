@@ -7,3 +7,32 @@ optional - kubeproxy will assign an ip address to static ip adress to service co
 ntk - if we allocate nodeport as service mode to pods then the port allocation range would by default port allocation range starts from 30000 - 32000
 
 1)load-balancer type service - 
+
+K-ingress-controller-information
+
+Kubernetes Ingress-controller
+
+exp - why the ingress controller comes into 
+
+optional - kubeproxy will assign an ip address to static ip adress to service component.
+
+ntk - if we allocate nodeport as service mode to pods then the port allocation range would by default port allocation range starts from 30000 - 32000
+
+1)load-balancer type service - 
+
+
+practically implement ingress resource onto kubernetes cluster
+
+prerequiste to it
+1) ingress-controller has to be installed on in k cluster
+to ingress controller install via helm charts
+2)ingress resource - set of rules
+
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+				# helm repo update
+				# helm install ingress-nginx ingress-nginx/ingress-nginx --namespace ingress-nginx --create-namespace
+using above 3 commands we can install ingress-controller onto kubernetes cluster
+
+after installing it can check with commands like
+kubectl get ingress-controller
+
